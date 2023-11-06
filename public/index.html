@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome to Firebase Hosting</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.5.2/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/10.5.2/firebase-auth-compat.js"></script>
+    <script
+      defer
+      src="/__/firebase/10.5.2/firebase-database-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.5.2/firebase-firestore-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.5.2/firebase-functions-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.5.2/firebase-messaging-compat.js"
+    ></script>
+    <script defer src="/__/firebase/10.5.2/firebase-storage-compat.js"></script>
+    <script
+      defer
+      src="/__/firebase/10.5.2/firebase-analytics-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.5.2/firebase-remote-config-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.5.2/firebase-performance-compat.js"
+    ></script>
+    <script defer src="/__/firebase/10.5.2/firebase-firestore.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  </head>
+  <body>
+    <!-- <button onclick="googleLogin()">Login with Google</button> -->
+    <h3>Storage Uploads</h3>
+    <input type="file" onchange="uploadFile(this.files)" />
+    <hr />
+    <img id="imgUpload" src="" width="100vw" />
+    <script src="app.js"></script>
+  </body>
+</html>
